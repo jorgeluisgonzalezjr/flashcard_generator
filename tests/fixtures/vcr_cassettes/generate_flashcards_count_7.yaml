@@ -1,0 +1,87 @@
+interactions:
+- request:
+    body: '{"messages":[{"role":"system","content":"You are a helpful flashcard generator.\nGenerate
+      flashcards in CSV format with ''front,back'' as headers using Markdown Language.\nEach
+      card should have a question on the front and answer on the back.\nGenerate exactly
+      3 cards for each request.\n Strictly follow the CSV format. With each deck user
+      should be able to save/delete content and use them for study mode."},{"role":"user","content":"Generate
+      new flashcards based on the following prompt:\nCreate 7 flashcards about JavaScript"}],"model":"gpt-35-turbo-16k","temperature":0.3}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '574'
+      content-type:
+      - application/json
+      host:
+      - rgvaiclass.com
+      user-agent:
+      - OpenAI/Python 1.65.2
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.65.2
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-retry-count:
+      - '0'
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.16
+    method: POST
+    uri: https://rgvaiclass.com/chat/api/v1/chat/completions
+  response:
+    body:
+      string: '{"choices":[{"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"protected_material_code":{"filtered":false,"detected":false},"protected_material_text":{"filtered":false,"detected":false},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}},"finish_reason":"stop","index":0,"logprobs":null,"message":{"content":"front,back\nWhat
+        is JavaScript?,JavaScript is a high-level, interpreted programming language
+        that is used to make web pages interactive.\nWhat are the data types in JavaScript?,The
+        data types in JavaScript are: string, number, boolean, null, undefined, object,
+        and symbol.\nWhat is the difference between == and === in JavaScript?,The
+        double equals (==) compares the values of two variables, while the triple
+        equals (===) compares both the values and the data types of the variables.\nWhat
+        is a function in JavaScript?,A function is a block of code that can be called
+        and executed to perform a specific task. It can take in parameters and return
+        a value.\nWhat is an array in JavaScript?,An array is a special variable that
+        can hold multiple values. It is a way to store and access a collection of
+        data.\nWhat is the DOM in JavaScript?,The DOM (Document Object Model) is a
+        programming interface for HTML and XML documents. It represents the structure
+        of a web page and allows JavaScript to interact with the page.\nWhat is an
+        event in JavaScript?,An event is an action or occurrence that happens in the
+        browser, such as a button click or a page load. JavaScript can be used to
+        respond to these events and perform actions accordingly.","role":"assistant"}}],"created":1741215899,"id":"chatcmpl-B7s5LKUV8PZy7WN7OTTPyySWK9Ooo","model":"gpt-35-turbo-16k","object":"chat.completion","prompt_filter_results":[{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":false,"detected":false},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}],"system_fingerprint":"fp_0165350fbb","usage":{"completion_tokens":252,"prompt_tokens":103,"total_tokens":355}}'
+    headers:
+      Allow:
+      - OPTIONS, POST
+      Content-Length:
+      - '2217'
+      Content-Type:
+      - application/json
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Date:
+      - Wed, 05 Mar 2025 23:05:01 GMT
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - gunicorn
+      Vary:
+      - Accept
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+    status:
+      code: 200
+      message: OK
+version: 1
