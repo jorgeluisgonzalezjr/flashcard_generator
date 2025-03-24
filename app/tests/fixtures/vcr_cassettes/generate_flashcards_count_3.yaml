@@ -1,0 +1,76 @@
+interactions:
+- request:
+    body: '{"messages":[{"role":"system","content":"You are a helpful flashcard generator.\nGenerate
+      flashcards in CSV format with ''front,back'' as headers using Markdown Language.\nEach
+      card should have a question on the front and answer on the back.\nGenerate exactly
+      3 cards for each request.\n Strictly follow the CSV format. With each deck user
+      should be able to save/delete content and use them for study mode."},{"role":"user","content":"Generate
+      new flashcards based on the following prompt:\nCreate 3 flashcards about Python"}],"model":"gpt-35-turbo-16k","temperature":0.3}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '570'
+      content-type:
+      - application/json
+      host:
+      - rgvaiclass.com
+      user-agent:
+      - OpenAI/Python 1.65.2
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.65.2
+      x-stainless-read-timeout:
+      - '600'
+      x-stainless-retry-count:
+      - '0'
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.16
+    method: POST
+    uri: https://rgvaiclass.com/chat/api/v1/chat/completions
+  response:
+    body:
+      string: '{"choices":[{"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"protected_material_code":{"filtered":false,"detected":false},"protected_material_text":{"filtered":false,"detected":false},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}},"finish_reason":"stop","index":0,"logprobs":null,"message":{"content":"front,back\nWhat
+        is Python?,Python is a high-level programming language known for its simplicity
+        and readability.\nWhat are the key features of Python?,Key features of Python
+        include dynamic typing, automatic memory management, and a large standard
+        library.\nWhat are some common uses of Python?,Python is commonly used for
+        web development, data analysis, artificial intelligence, and automation.","role":"assistant"}}],"created":1741215898,"id":"chatcmpl-B7s5KsWl00ya7dpWuSGzNzoR633ej","model":"gpt-35-turbo-16k","object":"chat.completion","prompt_filter_results":[{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"jailbreak":{"filtered":false,"detected":false},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}],"system_fingerprint":"fp_0165350fbb","usage":{"completion_tokens":73,"prompt_tokens":103,"total_tokens":176}}'
+    headers:
+      Allow:
+      - OPTIONS, POST
+      Content-Length:
+      - '1379'
+      Content-Type:
+      - application/json
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Date:
+      - Wed, 05 Mar 2025 23:04:59 GMT
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - gunicorn
+      Vary:
+      - Accept
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+    status:
+      code: 200
+      message: OK
+version: 1
